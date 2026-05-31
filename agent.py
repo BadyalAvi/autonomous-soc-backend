@@ -66,7 +66,7 @@ Always output a final, concise recommendation formatted cleanly using Markdown."
 
 # Note: Using 1.5-flash to avoid Free Tier Rate Limits
 agent_executor = create_agent(
-    model="google_genai:gemini-1.5-flash", 
+    model="google_genai:gemini-2.5-flash", 
     tools=tools, 
     system_prompt=system_prompt
 )
