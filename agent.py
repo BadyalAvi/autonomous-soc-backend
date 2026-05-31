@@ -59,13 +59,15 @@ agent_executor = create_agent(
 app = FastAPI(title="Autonomous SOC API")
 
 # --- CORS MIDDLEWARE ---
+# --- CORS MIDDLEWARE ---
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  
-    allow_credentials=False,  
-    allow_methods=["*"],  
-    allow_headers=["*"],  
+    allow_origins=["*"],  # Allows all origins
+    allow_credentials=True, # CHANGE THIS TO TRUE 
+    allow_methods=["*"],  # Allows all methods (POST, GET, etc.)
+    allow_headers=["*"],  # Allows all headers
 )
+# -----------------------
 # -----------------------
 
 # Define the expected JSON payload from React Native
