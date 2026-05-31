@@ -50,7 +50,7 @@ If the score is above 0, declare the IP MALICIOUS and explain the risk based on 
 Always output a final, concise recommendation formatted cleanly using Markdown."""
 
 agent_executor = create_agent(
-    model="google_genai:gemini-3.5-flash", 
+    model="google_genai:gemini-2.5-flash", 
     tools=tools, 
     system_prompt=system_prompt
 )
